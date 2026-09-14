@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="heading">
+        <div class="top-heading">
+            <div class="nav-bar" style="grid-area: nav;"> 
+                <nav>
+                        <ul class="sidebar">
+                            <li onclick=hideSidebar()><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#cuts">Hair cuts</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    <ul>
+                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                        <li class="hideOnMobile"><a href="#home">Home</a></li>
+                        <li class="hideOnMobile"><a href="#cuts">Hair cuts</a></li>
+                        <li class="hideOnMobile"><a href="#about">About</a></li>
+                        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="book-now" style="grid-area: book;">
+                <a href="https://getsquire.com/discover/barbershop/notorious-fades-tulsa">Book Now</a>
+            </div>
+        </div>
+        <div class="logo" style="grid-area: logo;">
+            <h1>James logo</h1>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="hook">
+            <div class="hook-p1">
+                <h3>PREMIUM CUTS </h3>  
+                <h3>LEGENDARY STYLE </h3>  
+            </div>
+            <div class="hook-p2">
+                <h2>WELCOME TO NOTORUOUS FADES</h2>
+            </div>
+            <div class="hook-p3">
+                <p>Locared in Tulsa, oklahoma, Notoruous Fades is mote than just a barbershop- Its an experience. Precision cuts, clean fades, and unbeatable vibes. Book your appointment today and leave looking like a legend.</p>
+            </div>
+            <div>
+                <a href="https://getsquire.com/discover/barbershop/notorious-fades-tulsa" class="btn">Book Now</a>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/NotoriusFades" target="_blank" rel="noopener noreferrer" aria-label="Visit Notorious Fades on Facebook"><img src="james images/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/notoriusfades/" target="_blank" rel="noopener noreferrer" aria-label="Visit Notorious Fades on Instagram"><img src="james images/instagram.svg" alt="Instagram"></a>
+                </div> 
+            </div>
+        </div>
+        <div class="hero-photo">
+            <img src="james images/his logo.jpg" alt="James Logo">
+        </div>
+    </section>
+    <section class="hair-cuts">
+        <div >
+            <div>
+                <h3>Fades</h3>
+                <p>The best Fades in town.</p>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(`.sidebar`)
+            sidebar.style.display = `flex`;
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector(`.sidebar`)
+            sidebar.style.display = `none`;
+        }
+    </script>
+</body>
+</html>
