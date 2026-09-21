@@ -52,10 +52,10 @@ nav a:hover {
     align-items: flex-start;
     justify-content: flex-start;
 }
-.side-bar li {
+.sidebar li {
     width: 100%;
 }
-.side-bar a {
+.sidebar a {
     width: 100%;
 }
 .menu-button {
@@ -212,7 +212,52 @@ nav a:hover {
     transition: filter 180ms ease;
 }
 .hair-cuts {
+
+}
+.haircut-header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 60px 20px 40px;
+}
+.haircut-header h3 {
+    color: white;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: .08em;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+.haircut-header h4 {
+    color: #d0d0d0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    line-height: 1.6;
+}
+.hair-cuts-rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.haircut-image {
+    height: 350px;
+}
+.haircut-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.hair-info {
+    display: flex;  
     background-color: white;
+    flex-direction: column;
+    padding: 30px;
+}
+.hair-info h3 {
+    text-align: start;
+    font-weight: 700;
 }
 
 
